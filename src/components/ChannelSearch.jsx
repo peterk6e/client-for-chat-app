@@ -33,7 +33,7 @@ const onSearch = (e) => {
           placeholder="Search"
           type="text"
           value={query}
-          onchange={onSearch}
+          onChange={onSearch}
         />
       </div>
     </div>
