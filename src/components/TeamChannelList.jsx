@@ -10,7 +10,8 @@ const TeamChannelList = ({
   isCreating,
   isEditing,
   setCreateType,
-  setIsEditing
+  setIsEditing,
+  setIsCreating
 }) => {
   if (error) {
     return type === "team" ? (
@@ -40,6 +41,7 @@ const TeamChannelList = ({
         </p>
         <AddChannel
           isCreating={isCreating}
+          setIsCreating={setIsCreating}
           isEditing={isEditing}
           setIsEditing={setIsEditing}
           setCreateType={setCreateType}

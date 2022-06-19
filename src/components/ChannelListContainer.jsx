@@ -33,6 +33,7 @@ const ChannelListContainer = ({
   isCreating,
   isEditing,
   setCreateType,
+  setIsCreating,
   setIsEditing,
 }) => {
   const logout = () => {
@@ -61,6 +62,7 @@ const ChannelListContainer = ({
               {...listProps}
               type="team"
               isCreating={isCreating}
+              setIsCreating={setIsCreating}
               isEditing={isEditing}
               setIsEditing={setIsEditing}
               setCreateType={setCreateType}
@@ -78,6 +80,7 @@ const ChannelListContainer = ({
               {...listProps}
               type="messaging"
               isCreating={isCreating}
+              setIsCreating={setIsCreating}
               isEditing={isEditing}
               setIsEditing={setIsEditing}
               setCreateType={setCreateType}
