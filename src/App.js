@@ -42,6 +42,7 @@ function App() {
         <ChannelListContainer
           isCreating={isCreating}
           isEditing={isEditing}
+          setIsCreating={setIsCreating}
           setCreateType={setCreateType}
           setIsEditing={setIsEditing}
         />
