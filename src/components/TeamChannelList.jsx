@@ -2,7 +2,16 @@ import React from "react";
 
 import { AddChannel } from "../assets";
 
-const TeamChannelList = ({ children, error = false, loading, type }) => {
+const TeamChannelList = ({
+  children,
+  error = false,
+  loading,
+  type,
+  isCreating,
+  isEditing,
+  setCreateType,
+  setIsEditing
+}) => {
   if (error) {
     return type === "team" ? (
       <div className="tean-channel-list">
@@ -26,10 +35,16 @@ const TeamChannelList = ({ children, error = false, loading, type }) => {
   return (
     <div className="team-channel-list">
       <div className="team-channel-list__header">
-        <p className="team-channel-list__header_title">
+        <p className="team-channel-list__header__title">
           {type === "team" ? "Channels" : "Direct Messages"}
         </p>
-        {/* button to add channel */}
+        <AddChannel
+          isCreating={isCreating}
+          isEditing={isEditing}
+          setIsEditing={setIsEditing}
+          setCreateType={setCreateType}
+          type={type === "team" ? "team" : "messaging"}
+        />
       </div>
       {children}
     </div>
