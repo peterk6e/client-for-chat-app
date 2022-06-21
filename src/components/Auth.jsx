@@ -30,7 +30,7 @@ const Auth = () => {
     e.preventDefault();
 
     const { fullName, username, password, phoneNumber, avatarURL } = form;
-    const URL = "http://localhost:5000/auth";
+    const URL = process.env.REACT_APP_BASE_URL + '/auth';
 
     const {
       data: { token, userId, hashedPassword },
