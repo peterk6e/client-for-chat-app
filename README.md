@@ -1,6 +1,6 @@
 # React Chat Application
 
-## Communication tool for teams.
+## Communication tool for teams
 
 After registration, this tool allows users to chat together, to create, edit, search channels and to choose to invite members in their channels.  
 They can also chat via Direct Messages. They can message files, GIF and emojis and each instant message can be edited or deleted.  
@@ -18,6 +18,6 @@ The repo for the server side: [server repo](https://github.com/peterk6e/server-f
 
 <div align="center">
   
-  <img src="https://github.com/peterk6e/client-for-chat-app/blob/master/.github/capture.jpg" width="479" height="243">
+  <img src="https://github.com/peterk6e/client-for-chat-app/blob/master/.github/capture.JPG" width="479" height="243">
 
 </div>
