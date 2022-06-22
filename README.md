@@ -18,6 +18,7 @@ The repo for the server side: [server repo](https://github.com/peterk6e/server-f
 
 <div align="center">
   
-  <img src="https://github.com/peterk6e/client-for-chat-app/blob/master/.github/capture.JPG" width="479" height="243">
+  <img src="https://github.com/peterk6e/client-for-chat-app/blob/dev/.github/capture.JPG?raw=true" width="479" height="243">
+
 
 </div>
