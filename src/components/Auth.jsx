@@ -31,7 +31,7 @@ const Auth = () => {
 
     const { fullName, username, password, phoneNumber, avatarURL } = form;
     const URL = process.env.REACT_APP_BASE_URL + '/auth';
-
+    
     const {
       data: { token, userId, hashedPassword },
     } = await axios.post(`${URL}/${isSignup ? "signup" : "login"}`, {

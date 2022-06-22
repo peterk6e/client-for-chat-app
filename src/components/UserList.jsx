@@ -48,6 +48,7 @@ const UserList = ({ setSelectedUsers }) => {
   const [listEmpty, setListEmpty] = useState(false);
   const [error, setError] = useState(false);
 
+  /*eslint-disable */
   useEffect(() => {
     const getUsers = async () => {
       if (loading) return;
@@ -73,7 +74,8 @@ const UserList = ({ setSelectedUsers }) => {
     };
 
     if (client) getUsers();
-  });
+  }, []); // missing dependencies warning
+  /*eslint-enable */
 
   if (error) {
     return (
